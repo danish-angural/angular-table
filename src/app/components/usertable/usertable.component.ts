@@ -17,7 +17,6 @@ export class UsertableComponent implements OnInit {
   constructor(private userService: UserService) { }
   
   ngOnInit() {
-    this.dataSource.paginator = this.paginator;
   }
 }export class UserDataSource extends DataSource<any> {
   constructor(private userService: UserService) {
