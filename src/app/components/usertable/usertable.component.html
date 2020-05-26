@@ -2,18 +2,30 @@
     <mat-table [dataSource]="dataSource" class="table">
       <ng-container matColumnDef="name">
         <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
-        <mat-cell *matCellDef="let user"> {{user.name}} </mat-cell>
+        <mat-cell (click)="getRecord(user)" *matCellDef="let user"> {{user.name}} </mat-cell>
       </ng-container>
       <ng-container matColumnDef="_id">
         <mat-header-cell *matHeaderCellDef> id </mat-header-cell>
-        <mat-cell *matCellDef="let user"> {{user._id}} </mat-cell>
+        <mat-cell (click)="getRecord(user)"*matCellDef="let user"> {{user._id}} </mat-cell>
       </ng-container>
       <ng-container matColumnDef="roll">
         <mat-header-cell *matHeaderCellDef> roll </mat-header-cell>
-        <mat-cell  *matCellDef="let user"> {{user.roll}} </mat-cell>
+        <mat-cell (click)="getRecord(user)" *matCellDef="let user"> {{user.roll}} </mat-cell>
       </ng-container>
       <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
       <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
     </mat-table>
     <mat-paginator [pageSizeOptions]="[20, 30, 40]" showFirstLastButtons></mat-paginator>
   </div>
+<div id="modal">
+  <div class="modal-content animate">
+    <span onclick="document.getElementById('modal').style.display='none'"
+  class="close" title="Close Modal">&times;</span>
+       <div class="info">
+         <img src="avatar.png">
+        <h2>name: {{name}}</h2>
+        <h2>id: {{id}}</h2>
+        <h2>roll: {{roll}}</h2>
+      </div>
+    </div>
+    </div>
