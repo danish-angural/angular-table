@@ -31,3 +31,7 @@ mat-row.mat-row.ng-star-inserted
 .mat-row:nth-child(odd){
     background-color:#ffffff;
 }
+.mat-row:hover {
+    background-color: #50C878;
+    font-size: 20px;
+  }
