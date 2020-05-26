@@ -11,6 +11,7 @@ div{
     font-size: smaller;
     padding:0px;
     height: 10px;
+    border-radius: 5px;
 }
 .mat-column{
     height: 20px ;
@@ -18,8 +19,15 @@ div{
 mat-row.mat-row.ng-star-inserted 
 { height: 32px !important; } 
 
-.mat-row{ min-height: 30px; }
+.mat-row{ min-height: 30px; border-radius: 5px; }
 .mat-table{
     width: 700px;
     padding: 0px;
+}
+.mat-row:nth-child(even){
+    background-color: #e4f0ec;
+}
+
+.mat-row:nth-child(odd){
+    background-color:#ffffff;
 }
