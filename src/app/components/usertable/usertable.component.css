@@ -5,4 +5,21 @@ div{
     border: 10px;
     border-color: black;
     background-color: white;
+    font-size: smaller;
+}
+.mat-cell{
+    font-size: smaller;
+    padding:0px;
+    height: 10px;
+}
+.mat-column{
+    height: 20px ;
+}
+mat-row.mat-row.ng-star-inserted 
+{ height: 32px !important; } 
+
+.mat-row{ min-height: 30px; }
+.mat-table{
+    width: 700px;
+    padding: 0px;
 }
