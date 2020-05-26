@@ -1,0 +1,11 @@
+body{
+    background-image:url("background.jpg");
+}
+div{
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    width:fit-content ;
+}
