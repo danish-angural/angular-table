@@ -1,12 +1,13 @@
-div{
-    margin: 20px;
-    width: 700px;
+.main{
+    width: 50%;
     border-radius: 10px;
-    border: 10px;
-    border-color: black;
     background-color: white;
     font-size: smaller;
     pointer-events: all;
+    padding: 5px;
+    position: relative;
+    top: 100px;
+   margin: auto;
 }
 .mat-cell{
     font-size: smaller;
@@ -22,8 +23,9 @@ mat-row.mat-row.ng-star-inserted
 
 .mat-row{ min-height: 30px; border-radius: 5px; }
 .mat-table{
-    width: 700px;
-    padding: 0px;
+    width: 100%;
+    padding: 5px;
+
 }
 .mat-row:nth-child(even){
     background-color: #e4f0ec;
